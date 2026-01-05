@@ -5,7 +5,7 @@ import os
 # # BASE_DIR = "/data/ARGOS/005.outdoor_detector/20250831/002_long_load"
 # # BASE_DIR = "/data/ARGOS/005.outdoor_detector/20250831/003_alley_way"
 # BASE_DIR = "/data/ARGOS/005.outdoor_detector/20250831/004_driveway_sidewalk"
-BASE_DIR = "/data/ARGOS/005.outdoor_detector/20250901_VALID_TODO/004_driveway_sidewalk/crop/crop_pred"
+BASE_DIR = "/data/ARGOS/face_detector/Annotation/Youtube_done/crop_pred"
 
 # True면 삭제하지 않고 로그만 출력
 DRY_RUN = False
@@ -23,8 +23,8 @@ DRY_RUN = False
 # }
 # 3 class
 CLASS_DIR_TO_DET_IDX = {
+    "unknown":         [3],
     "O_Bike":      [2],
-
     "O_Person":         [0],
     "O_Vehicle":         [1],
 }

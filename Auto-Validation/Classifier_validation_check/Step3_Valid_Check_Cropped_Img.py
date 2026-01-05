@@ -7,19 +7,20 @@ from PIL import Image, ImageTk, ImageDraw
 # -----------------------------
 # CONFIG
 # -----------------------------
-BASE_DIR = r"X:\data\ARGOS\005.outdoor_detector\20250901_VALID_TODO\004_driveway_sidewalk"
-CROPPED_DIR = r"X:\data\ARGOS\005.outdoor_detector\20250901_VALID_TODO\004_driveway_sidewalk\crop_pred"
+BASE_DIR = r"X:\data\ARGOS\face_detector\Annotation\rtsp_seoul_2_done"
+CROPPED_DIR = r"X:\data\ARGOS\face_detector\Annotation\rtsp_seoul_2_done\crop_pred"
 VALID_TXT_PATH = os.path.join(CROPPED_DIR, "crop_valid.txt")
 
 MIN_W, MIN_H = 1280, 720
 RIGHT_W = 500
 TOOLBAR_H = 52
 
-DET_LABEL = {0: "Person", 1: "Vehicle", 2: "Bike"}
+DET_LABEL = {0: "Person", 1: "Vehicle", 2: "Bike", 3: "Unknown"}
 DET_COLOR = {
     0: "#2ECC71",  # Person  - Green
     1: "#F1C40F",  # Vehicle - Yellow
     2: "#3498DB",  # Bike    - Blue
+    3: "#E74C3C",  # Unknown - Red
 }
 IMG_EXTS = (".jpg", ".jpeg", ".png", ".bmp", ".webp")
 
@@ -167,6 +168,7 @@ class ReviewApp:
             if c == 0: return 0
             if c == 1: return 1
             if c == 2: return 2
+            if c == 3: return 3
             return 9
 
         self.items.sort(key=lambda it: (cls_order(it["det_cls"]), it["subdir"], it["fname"]))
@@ -182,6 +184,7 @@ class ReviewApp:
             if c == 0: return 0
             if c == 1: return 1
             if c == 2: return 2
+            if c == 3: return 3
             return 9
 
         for i, it in enumerate(self.items):
@@ -369,6 +372,7 @@ class ReviewApp:
             if c == 0: return 0
             if c == 1: return 1
             if c == 2: return 2
+            if c == 3: return 3
             return 9
 
         cur_group = cls_order(item.get("det_cls", -1))

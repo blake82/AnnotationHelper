@@ -8,7 +8,7 @@ from tqdm import tqdm
 # BASE_DIR = "/data/ARGOS/005.outdoor_detector/20250831/001_wide_field"
 # BASE_DIR = "/data/ARGOS/005.outdoor_detector/20250831/002_long_load"
 # BASE_DIR = "/data/ARGOS/005.outdoor_detector/20250831/003_alley_way"
-BASE_DIR = "/data/ARGOS/005.outdoor_detector/20250901_VALID_TODO/004_driveway_sidewalk"
+BASE_DIR = "/data/ARGOS/face_detector/Annotation/Youtube_done"
 CROP_DIR = os.path.join(BASE_DIR, "crop")
 
 os.makedirs(CROP_DIR, exist_ok=True)

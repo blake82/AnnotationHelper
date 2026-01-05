@@ -11,8 +11,8 @@ from tqdm import tqdm
 # BASE_DIR = "/data/ARGOS/005.outdoor_detector/20250831/003_alley_way"
 # BASE_DIR = "/data/ARGOS/005.outdoor_detector/20250831/004_driveway_sidewalk"
 
-BASE_DIR = "/data/ARGOS/005.outdoor_detector/20250901_VALID_TODO/004_driveway_sidewalk"
-CROPPED_DIR = "/data/ARGOS/005.outdoor_detector/20250901_VALID_TODO/004_driveway_sidewalk/crop_pred"
+BASE_DIR = "/data/ARGOS/face_detector/Annotation/Youtube_done"
+CROPPED_DIR = "/data/ARGOS/face_detector/Annotation/Youtube_done/crop_pred"
 VALID_TXT_PATH = os.path.join(CROPPED_DIR, "crop_valid.txt")
 VALID_CHECK_DIR = os.path.join(BASE_DIR, "validcheck")
 

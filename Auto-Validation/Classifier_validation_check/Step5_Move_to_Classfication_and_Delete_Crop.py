@@ -10,7 +10,7 @@ import time
 # BASE_DIR = "/data/ARGOS/005.outdoor_detector/20250831/003_alley_way"
 # BASE_DIR = "/data/ARGOS/005.outdoor_detector/20250831/004_driveway_sidewalk"
 
-BASE_DIR = "/data/ARGOS/005.outdoor_detector/20250901_VALID_TODO/004_driveway_sidewalk"
+BASE_DIR = "/data/ARGOS/face_detector/Annotation/Youtube_done"
 CROPPED_DIR = os.path.join(BASE_DIR, "crop_pred")
 CROP_DIR = os.path.join(BASE_DIR, "crop")
 
