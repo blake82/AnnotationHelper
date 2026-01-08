@@ -1,0 +1,4 @@
+label_dir,total_txt_files,total_bboxes,class_id,count,ratio
+/home2/ai/data/detection/outdoor_corridor/BEFORE_20251231/train,49510,381760,0,105154,0.27544530595138306
+/home2/ai/data/detection/outdoor_corridor/BEFORE_20251231/train,49510,381760,1,258675,0.6775853939647947
+/home2/ai/data/detection/outdoor_corridor/BEFORE_20251231/train,49510,381760,2,17931,0.046969300083822295
